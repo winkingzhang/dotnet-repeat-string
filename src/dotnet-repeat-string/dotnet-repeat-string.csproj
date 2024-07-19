@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>org.zhangwenqing.stringutils</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>dotnet-repeat-string</Title>
+    <Authors>winking.zhang@live.com</Authors>
+    <Description>Creates a new String by repeating n times.</Description>
+    <RepositoryUrl>https://github.com/winkingzhang/dotnet-repeat-string</RepositoryUrl>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.2024.07191</FileVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>public.snk</AssemblyOriginatorKeyFile>
+    <PublicSign>true</PublicSign>
+    <LangVersion>12</LangVersion>
+  </PropertyGroup>
+
+</Project>

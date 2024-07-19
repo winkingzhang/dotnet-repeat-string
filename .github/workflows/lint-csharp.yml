@@ -1,0 +1,24 @@
+﻿name: Lint-CSharp
+
+on:
+  push:
+    paths:
+      - '**.cs'
+      - '**.csproj'
+      - '**.json'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Code Style
+        run: |
+          dotnet format whitespace --verify-no-changes --verbosity diag --no-restore
+          dotnet format style --verify-no-changes --verbosity diag --no-restore
